@@ -23,7 +23,7 @@ def load_agent(agent_type="rule"):
 
 
 def main():
-    agent_type = "q"  # Change to "q", "pg", or "evo"
+    agent_type = "rule"  # Change to "rule", "q", "pg", or "evo"
     agent = load_agent(agent_type)
 
     model = ForestPestModel()
