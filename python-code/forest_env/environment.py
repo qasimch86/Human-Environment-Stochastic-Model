@@ -26,8 +26,8 @@ class ForestEnv:
         self.state = next_state
         self.time += 1
 
-        # Define reward: e.g., negative pest population or cost of intervention
-        reward = -self.state[0] - 0.1 * action  # example
+        # Define reward: negative pest population or cost of intervention
+        reward = -self.state[0] - 0.1 * action
 
         done = self.time >= self.max_time
         info = {}
